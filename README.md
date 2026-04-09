@@ -59,3 +59,14 @@ Travelers often forget exact dates, locations, and experiences from past trips. 
     Map.jsx
     CityList.jsx
     Form.jsx
+
+## Target Audience
+- Travel enthusiasts and hobby travellers
+- Digital nomads tracking travel history
+- Geography learners and data visualisation enthusiasts
+
+## Future Improvements
+- User authentication system
+- Cloud database integration
+- Travel statistics dashboard
+- Photo upload for trip memories
