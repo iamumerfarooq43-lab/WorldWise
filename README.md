@@ -1,16 +1,61 @@
-# React + Vite
+# WorldWise – Your Interactive Travel Footprint
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+WorldWise is a travel tracking web application that helps users document and visualize their journeys around the world. Through an interactive map interface, users can mark visited locations, record trip details such as travel dates and notes, and maintain a persistent history of explored cities and countries.
 
-Currently, two official plugins are available:
+## Problem It Solves
+Travelers often forget exact dates, locations, and experiences from past trips. WorldWise solves this problem by providing a map-based travel diary that combines geographic visualization with detailed trip records, making travel history easier to organize, remember, and explore.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- Interactive world map using Leaflet
+- Add and save visited cities with trip details
+- Automatically generate visited countries list
+- Record travel dates and personal notes for each location
+- Real-time UI updates without page reloads
+- Persistent local data storage using mock backend API
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React 19
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+### Build Tool
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend / API
+- json-server (Mock REST API)
+
+### Styling
+- CSS Modules
+
+## React Concepts & Hooks Used
+- `useReducer` – Manages complex application state
+- `useContext` – Provides global state via CitiesContext
+- `useEffect` – Handles backend synchronization
+- `useCallback` – Optimizes rendering performance
+- Custom Hook: `useCities` – Simplifies context access logic
+
+## Third-Party Libraries
+- `react-leaflet` / `leaflet` – Interactive maps
+- `react-router-dom` – Routing and navigation
+- `react-datepicker` – Date selection UI
+- `eslint` – Code quality and linting
+
+## Project Structure
+```bash
+/data
+  cities.json
+
+/src
+  /Contexts
+    CityContext.jsx
+  /Pages
+    AppLayout.jsx
+    Homepage.jsx
+    Login.jsx
+  /Components
+    Sidebar.jsx
+    Map.jsx
+    CityList.jsx
+    Form.jsx
